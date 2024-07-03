@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: TICKET-SERVICE
+  config:
+    import: "optional:configserver:http://localhost:8089"
+  datasource:
+    url: jdbc:mysql://localhost:3306/ticketdb?createDatabaseIfNotExist=true
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    generate-ddl: true
+    database: mysql
+    hibernate:
+      ddl-auto: update
