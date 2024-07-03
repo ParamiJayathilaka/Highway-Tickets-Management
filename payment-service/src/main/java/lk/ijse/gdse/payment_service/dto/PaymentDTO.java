@@ -10,6 +10,5 @@ public class PaymentDTO {
     private String id;
     private String ticketId;
     private String date;
-    private double price;
-    private String type;
+
 }
